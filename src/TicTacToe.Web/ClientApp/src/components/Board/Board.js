@@ -24,7 +24,6 @@ export default function Board(props) {
   const classes = useStyles();
   const history = useHistory();
   const [identity, setIdentity] = useState("");
-  const identityRef = useRef(identity);
   const [gameState, setGameState] = useState([
     ["●", "●", "●"],
     ["●", "●", "●"],

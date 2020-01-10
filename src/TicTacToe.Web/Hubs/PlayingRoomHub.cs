@@ -31,7 +31,6 @@ namespace TicTacToe.Web.Hubs
 
         public async Task PerformMove(Move command)
         {
-            Console.WriteLine("XDDD: " + command.Identity);
             var context = Context.GetHttpContext();
             var id = context.Request.Query["access_token"];
 
